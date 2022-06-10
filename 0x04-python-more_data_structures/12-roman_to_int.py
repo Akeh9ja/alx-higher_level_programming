@@ -7,5 +7,5 @@ def roman_to_int(roman_string):
     for j in range(len(roman_string)):
         if j > 0 and roman_d[roman_string[j]] > roman_d[roman_string[j - 1]]:
             roman_n += roman_d[roman_string[j]] - (roman_d[roman_string[j - 1]] * 2)        else:
-             roman_n += roman_d[roman_string[j]]
+            roman_n += roman_d[roman_string[j]]
     return roman_n
